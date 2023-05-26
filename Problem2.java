@@ -9,12 +9,11 @@ public class Problem2 {
         int b = input.nextInt();
         int c = input.nextInt();
 
-        Rational discriminant = new Rational(b * b - 4 * a * c, 1);
-        Rational root1 = new Rational((-b + discriminant.sqrt()) / (2 * a), 1);
-        Rational root2 = new Rational((-b - discriminant.sqrt()) / (2 * a), 1);
+        Rational h = new Rational(-b, 2 * a); // h = -b/2a
+        Rational k = new Rational(4 * a * c - b * b, 4 * a); // k = (4ac - b^2)/4a
 
-        System.out.println("Root 1: " + root1);
-        System.out.println("Root 2: " + root2);
+        System.out.println("h is " + h + " k is " + k);
+        input.close();
     }
   
     static class Rational extends Number implements Comparable<Rational> {

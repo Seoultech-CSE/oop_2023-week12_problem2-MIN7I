@@ -10,7 +10,7 @@ public class Problem2 {
         int c = input.nextInt();
 
         /*
-          Rational class를 참고하여 코드 작성
+          Rational class를 코드 작성
         */
       
     }

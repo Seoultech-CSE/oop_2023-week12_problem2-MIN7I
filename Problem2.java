@@ -9,10 +9,11 @@ public class Problem2 {
         int b = input.nextInt();
         int c = input.nextInt();
 
-        /*
-          Rational class를 참고하여 코드 작성
-        */
-      
+        Rational h = new Rational(-b, 2 * a); // h = -b/2a
+        Rational k = new Rational(4 * a * c - b * b, 4 * a); // k = (4ac - b^2)/4a
+
+        System.out.println("h is " + h + " k is " + k);
+        input.close();
     }
   
     static class Rational extends Number implements Comparable<Rational> {
